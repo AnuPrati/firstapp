@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">"first app "</string>
+    <string name="welcomeText">"Welcome to database management.Select one of the below options to start"</string>
+</resources>

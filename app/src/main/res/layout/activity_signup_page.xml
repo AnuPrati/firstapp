@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.firstapp.SignupPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/SignUpImageIcon"
+                android:layout_marginTop="40dp"
+                 android:src="@drawable/icon"
+                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/SignUpImageIcon"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/NameSignupData"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:id="@+id/NameSignUpText"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/PasswordConfirm"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/EmailData"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/EmailData"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNumber"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone no "
+                    android:inputType="phone"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/phoneNumber"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodGroup"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group "
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+               <Spinner
+                   android:layout_width="300dp"
+                   android:id="@+id/BloodGroupSelect"
+                   android:layout_height="wrap_content">
+
+               </Spinner>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/bloodGroup"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/DOB"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textSize="20dp"
+                    android:id="@+id/DoBText"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="OpenCalender"
+                    android:src="@drawable/calnder"
+                    android:layout_toRightOf="@+id/DoBText" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/NameSignupData"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/PasswordCreate"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/passtext"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/PasswordCreate"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/PasswordConfirm"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Re Type Password"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="300dp"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/passre"
+                    android:layout_height="wrap_content"
+                    android:hint="Re type Password"
+                    />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/DOB"
+                android:onClick="SignUp"
+                android:id="@+id/SignUpButton"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AlreadyHaveAccount"
+                android:text="Already have a account "
+                android:layout_below="@+id/SignUpButton"
+                android:onClick="LoginPage"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

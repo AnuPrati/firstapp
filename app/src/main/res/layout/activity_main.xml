@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.firstapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="26dp"
+        android:layout_margin="40dp"
+        android:textAlignment="center"
+        android:id="@+id/HeaderText"
+        android:text="@string/welcomeText"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/Submit_expenses"
+        android:layout_marginTop="30dp"
+        android:text="Submit Expense"
+        android:layout_below="@+id/eidttextholder"
+        android:layout_centerHorizontal="true"
+        android:onClick="InsertSpent"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ViewTotalExpenses"
+        android:text="Total Expense"
+        android:layout_below="@+id/Submit_expenses"
+        android:onClick="Total"
+        />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/eidttextholder"
+      android:layout_below="@+id/HeaderText"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/textHint"
+          android:textAlignment="center"
+          android:text="Enter number "
+          android:textSize="20dp"
+          android:layout_margin="20dp"/>
+      <EditText
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/TextFirst"
+          android:layout_below="@+id/textHint"
+       android:inputType="numberPassword"/>
+  </RelativeLayout>
+
+
+
+</RelativeLayout>
