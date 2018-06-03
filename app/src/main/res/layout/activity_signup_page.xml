@@ -65,6 +65,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_height="wrap_content"
                     android:hint="Email"
+                    android:id="@+id/EmailTExt"
                     android:inputType="textEmailAddress"
                     />
 
@@ -89,6 +90,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_height="wrap_content"
                     android:hint="Phone no "
+                    android:id="@+id/PhoneText"
                     android:inputType="phone"
                     />
 
@@ -132,14 +134,14 @@
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
                     />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:onClick="OpenCalender"
-                    android:src="@drawable/calnder"
-                    android:layout_toRightOf="@+id/DoBText" />
-
-
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DOBTExt"
+                    android:inputType="date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:hint="Date of birth "/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -189,6 +191,14 @@
                     android:layout_height="wrap_content"
                     android:hint="Re type Password"
                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passwords dont match please retype"
+                    android:textColor="#f00"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/PasswrongText"/>
 
             </LinearLayout>
             <Button
